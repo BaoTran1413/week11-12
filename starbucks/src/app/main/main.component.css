@@ -1,0 +1,424 @@
+.starburt-comtainer{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    box-shadow: none;
+}
+.menu-st{
+    width: 100%;
+    height:80px;
+}
+.menu-st .address{
+    float:right;
+    margin-top: 15px;
+}
+.menu-st .address i{
+    color:#006341
+}
+.menu-st ul{
+    list-style-type: none;
+    margin: 0px 120px;
+    padding: 0;
+    overflow: hidden;
+
+}
+.menu-st li{
+    float: left;
+}
+
+.menu-st a{
+    display: block;
+    color: white;
+    text-align: center;
+    /* padding: 60px 25px 0px 25px; */
+    padding: 45px 25px 0px 25px;
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+}
+.menu-st li:hover{
+    background-color: rgba(46, 43, 43, 0.1);
+}
+.menu-st a:hover{
+    /* color:white; */
+    color:black
+}
+.coffee-visible{
+    display:none;
+}
+.menu-st ul li:hover .coffee-visible{
+    display: block;
+    position:absolute;
+    background-color: #000;
+    /* margin-top:15px; */
+    margin-left: -15px;
+}
+.menu-st ul li:hover .cooffee-list{
+    display: block;
+    position:absolute;
+    margin-left: -530px;
+    width:100%;
+    height:300px;
+    /* border:1px solid orange; */
+    background-color:rgb(46, 43, 43);
+    color:#fff;
+}
+.menu-st ul li:hover .coffee-visible ul{
+    display:block;
+    margin:10px;
+}
+.menu-st li:hover .coffee-visible ul li{
+    width:100%;
+    padding:10px;
+    /* border-bottom: 1px dotted #000; */
+    background: transparent;
+    border-radius:0;
+    text-align:left;
+
+}
+.menu-st li:hover .coffee-visible ul li:last-child{
+    border-bottom:none;
+}
+.banner-st{
+    /* margin-top:10px; */
+    border: 1px solid black;
+    width: 1519px;
+    height:550px;
+    background-image: linear-gradient(to right, #B1DDD6 , #F1E8B3);
+}
+
+.body-st{
+    width: 100%;
+    height:800px;
+    margin-top:30px;
+    margin-left:10px;
+
+}
+/* --------------------------------------------------------------------------top main--------------------------------------------------- */
+.body-st .body-top{
+    width: 100%;
+    height:50%;
+
+}
+
+.body-st .body-top .top-main{
+    width:50%;
+    float: left;
+    font-family: italic;
+    font-weight:bold;
+    margin-top:70px;
+}
+.body-st .body-top .top-main>h1{
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:10px;
+}
+.body-st .body-top .top-main>a {
+    font-weight:bold;
+    font-size:18px;
+    text-decoration: none;
+    margin-top:20px;
+}
+.body-st .body-top .top-img{
+    width:49%;
+    float: right;
+}
+/* --------------------------------------------------------------------------bot main--------------------------------------------------- */
+
+.body-st .body-bottom{
+    width: 100%;
+    height:49%;
+}
+
+.body-st .body-bottom .bottom-img{
+    width:50%;
+    float: left;
+}
+.body-st .body-bottom .bottom-main{
+    width:50%;
+    float: right;
+    font-weight:bold;
+    margin-top:70px;
+}
+.body-st .body-bottom .bottom-main>h1{
+    font-weight:bold;
+    font-size:20px;
+}
+.body-st .body-bottom .bottom-main>a{
+    font-weight:bold;
+    font-size:18px;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------title-footer-------------------------------------------------------------------------- */
+.footer-container{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.title-footer{
+    border:1px solid #fff;
+    margin-top: 30px;
+    width: 1519px;
+    height:100px;
+    background-color: rgb(220, 208, 208);
+    padding: 20px 0px 0px 170px;
+}
+.title-footer p>span{
+    font-size:40px;
+    padding-right:20px;
+}
+.main-footer{
+    width: 1519px;
+    /* height:100%; */
+    margin-bottom:50px;
+}
+.main-footer .fullfill{
+    width:90%;
+    height:200px;
+    margin:30px 0px 0px 150px;
+    
+}
+.main-footer .fullfill .one{
+    float:left;
+    width:20%;
+    height:200px;
+    padding: 20px 10px 0px 20px;
+}
+.main-footer .fullfill .one>h3{
+    font-weight:bold;
+    font-size:20px;
+}
+.main-footer .fullfill .one>p{
+    font-weight:600;
+    margin-top:5px;
+}
+.main-footer .fullfill .logo{
+    float:right;
+    width:10%;
+    height:200px;
+}
+.main-footer .note-footer{
+    width:90%;
+    height:100px;
+    margin:10px 0px 0px 150px;
+}
+.main-footer .note-footer p{
+    margin-top:10px;
+}
+.main-footer .note-footer p>i{
+   color:red;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------media------------------------------------------------ */
+@media only screen and (max-width: 910px){
+    .menu-st{
+        width: 100%;
+        height:60px;
+    }
+    .menu-st a{
+        
+        color:#000;
+        padding: 44px 15px 0px 15px;
+
+    }
+}
+@media only screen and (max-width: 812px){
+    .menu-st{
+        width: 100%;
+        height:60px;
+    }
+    .menu-st a{
+        font-size:10px;
+        color:#000;
+        padding: 50px 5px 0px 5px;
+
+    }
+}
+
+
+/* ------------------------------------------Cooffee--------------------------------------------------- */
+.cooffee-list{
+    display:none;
+}
+.menu-st ul li:hover .cooffee-list{
+    display: block;
+    position:absolute;
+    margin-left: -210px;
+    width:100%;
+    height:350px;
+    /* border:1px solid orange; */
+    background-color:rgb(46, 43, 43);
+    color:#fff;
+
+
+}
+.menu-st ul li:hover .cooffee-list .main{
+    width:20%;
+    height:350px;
+    background-color: rgb(128, 62, 233);
+    float:left;
+
+}
+/* ------------------------------------------- menu-------------------------------------------------- */
+.menu-list{
+    display:none;
+}
+.menu-st ul li:hover .menu-list{
+    display: block;
+    position:absolute;
+    margin-left: -316px;
+    width:100%;
+    height:350px;
+    /* border:1px solid orange; */
+    background-color:rgb(46, 43, 43);
+    color:#fff;
+
+}
+.menu-st ul li:hover .menu-list .main{
+    width:20%;
+    height:350px;
+    background-color: rgb(128, 62, 233);
+    float:left;
+
+}
+/* --------------------------------------------cooffeehouse------------------------------------------------- */
+.cooffeehouse-list{
+    display:none;
+}
+.menu-st ul li:hover .cooffeehouse-list{
+    display: block;
+    position:absolute;
+    margin-left: -413px;
+    width:100%;
+    height:350px;
+    background-color:rgb(46, 43, 43);
+    color:#fff;
+
+}
+.menu-st ul li:hover .cooffeehouse-list .main{
+    width:20%;
+    height:350px;
+    background-color: rgb(128, 62, 233);
+    float:left;
+
+}
+/* --------------------------------------------responsibility------------------------------------------------- */
+.responsibility-list{
+    display:none;
+}
+.menu-st ul li:hover .responsibility-list{
+    display: block;
+    position:absolute;
+    margin-left: -573px;
+    width:100%;
+    height:350px;
+    background-color:rgb(46, 43, 43);
+    color:#fff;
+
+}
+.menu-st ul li:hover .responsibility-list .main{
+    width:20%;
+    height:350px;
+    background-color: rgb(128, 62, 233);
+    float:left;
+
+}
+/* ---------------------------------------------about us------------------------------------------------ */
+.aboutus-list{
+    display:none;
+}
+.menu-st ul li:hover .aboutus-list{
+    display: block;
+    position:absolute;
+    margin-left: -747px;
+    width:100%;
+    height:350px;
+    background-color:rgb(46, 43, 43);
+    color:#fff;
+
+}
+.menu-st ul li:hover .aboutus-list .main{
+    width:20%;
+    height:350px;
+    background-color: rgb(128, 62, 233);
+    float:left;
+
+}
+/* ----------------------------------------------card----------------------------------------------- */
+.card-list{
+    display:none;
+}
+.menu-st ul li:hover .card-list{
+    display: block;
+    position:absolute;
+    margin-left: -877px;
+    width:100%;
+    height:350px;
+    background-color:rgb(46, 43, 43);
+    color:#fff;
+
+}
+.menu-st ul li:hover .card-list .main{
+    width:20%;
+    height:350px;
+    background-color: rgb(128, 62, 233);
+    float:left;
+
+}
+/* --------------------------------------------------- table--------------------------------------------------- */
+table{
+    width:100%;
+
+}
+table tr{
+    width:100%;
+    /* height:230px; */
+    /* border: 2px solid #fff; */
+}
+table td{
+    width:20%;
+    height:280px;
+    /* border-right: 2px solid #fff; */
+}
+tr .tdh{
+    width:100%;
+    height:70px;
+    border-top: 2px solid #fff;
+}
+
+tr>td>h2{
+    margin: 5px 0px 0px 10px;
+    font-weight:bold;
+    font-size:20px 
+}
+
+tr>td>p{
+    margin:2px 0px 2px 10px;
+    
+}
+tr>td>img{
+    margin:10px 0px 5px 20px;
+}
+button{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}

@@ -1,0 +1,490 @@
+<!-- [ngClass]="{'page1' : pageone}" -->
+<!-- (click)="outside()" -->
+<div class="hinglands"  >
+<div class="box">
+  <div class="header" id="top" >
+      <div class="logo-header"  (click)="outside()" >
+        <img src="../../assets/img/aaalogo.png" width="120px" height="120px" alt="logo" id="mens">
+      </div>
+      <div class="search-header">
+        <!-- <div class="button" id="menumain">
+          <button type="button"  class="btn btn-outline-primary" (click)="collapse.toggle()"   [attr.aria-expanded]="!isCollapsed"
+          aria-controls="collapseExample" >
+            Menu &nbsp;<i class="fa-solid fa-align-justify"></i>
+          </button>
+        </div> -->
+        <div class="button" id="menumain">
+          <button type="button"  class="btn btn-outline-primary" (click)="outsides()" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+          aria-controls="collapseExample" >
+            Menu &nbsp;<i class="fa-solid fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="img" (click)="outside()" >
+          <img src="../../assets/img/vn.jpg" width="30px" height="50">
+          <img src="../../assets/img/en.jpg" width="30px" height="30">  
+          
+        </div>
+        <button id="main"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" class="search" placeholder="keyword" id="main"> 
+        
+
+        <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="noshow" [ngClass]="{'noshow' : page}">
+          
+          <div class="card" id="menumain">
+          <button id="btnclose" type="button" class="btn btn-outline-dark" (click)="clickoutaide()"> X </button>
+
+            <div class="card-body">
+
+                <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                    
+                  <ngb-panel title="OUR COFFEE" [disabled]="true">
+          <button id="btnclose" type="button" class="btn btn-outline-dark" (click)="clickoutaide()"> X </button>
+
+                        <ng-template ngbPanelContent> </ng-template>     
+                  </ngb-panel>
+                  
+                  <ngb-panel title="MENU" >
+                    <ng-template ngbPanelContent>
+
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="COFFEE">
+                          <ng-template ngbPanelContent>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Phim Coffee" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="phinDi" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Espresso Coffee" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                          </ng-template>
+                        </ngb-panel>
+                      </ngb-accordion>
+
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="FREEZE">
+                          <ng-template ngbPanelContent>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Phim Coffee Freeze" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Non Coffee Freeze" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                          </ng-template>
+                        </ngb-panel>
+                      </ngb-accordion>
+
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="Tea">
+                          <ng-template ngbPanelContent>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Gloden Lotus Tea" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Peach Jelly Tea" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Peach Lemonhrass Tea" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Lychee Tea" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                          </ng-template>
+                        </ngb-panel>
+                      </ngb-accordion>
+
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="Banh Mi">
+                          <ng-template ngbPanelContent>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Grilled Pork" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Pork Meatball" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Roast Pork & Pork Sausage" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Roast Chicken" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                          </ng-template>
+                        </ngb-panel>
+                      </ngb-accordion>
+
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="OTHERS">
+                          <ng-template ngbPanelContent>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Pastry" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Merchandise" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Packaged Coffee" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel title="Delivery Menu" [disabled]="true"> </ngb-panel>  
+                            </ngb-accordion>
+                          </ng-template>
+                        </ngb-panel>
+                      </ngb-accordion>
+
+                    </ng-template>
+                  </ngb-panel>
+
+                  <ngb-panel title="NEWS" >
+                    <ng-template ngbPanelContent>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="NEWS & EVENTS" [disabled]="true"></ngb-panel>        
+                      </ngb-accordion>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="Promotion" [disabled]="true">
+                        </ngb-panel>
+                      </ngb-accordion>
+
+                    </ng-template>
+                  </ngb-panel>
+
+
+                  <ngb-panel title="BLOG" [disabled]="true">
+                      <ng-template ngbPanelContent>
+                            
+                      </ng-template>
+                  </ngb-panel>
+
+                  <ngb-panel title="COMMUNITY" >
+                    <ng-template ngbPanelContent>
+                        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                          <ngb-panel title="Vietnamese Culture">
+                            <ng-template ngbPanelContent>
+                              <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                                <ngb-panel title="Modernizing Dong Ho Painting" [disabled]="true"> </ngb-panel>  
+                              </ngb-accordion>
+                            </ng-template>
+                          </ngb-panel>
+                          <ngb-panel title="Community">
+                            <ng-template ngbPanelContent>
+                              <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                                <ngb-panel title="New Classroom For Children" [disabled]="true"> </ngb-panel>  
+                              </ngb-accordion>
+                            </ng-template>
+                          </ngb-panel>
+                        </ngb-accordion>
+                    </ng-template>
+                  </ngb-panel>
+
+                  <ngb-panel title="ABOUT" >
+                    <ng-template ngbPanelContent>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="ORIGIN" [disabled]="true"></ngb-panel>        
+                      </ngb-accordion>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="CUSTOMER SERVICE" [disabled]="true">
+                        </ngb-panel>
+                      </ngb-accordion>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel title="CAREER" [disabled]="true">
+                        </ngb-panel>
+                      </ngb-accordion>
+                      </ng-template>
+                  </ngb-panel>
+
+                  <ngb-panel title="CONTACT" [disabled]="true">
+                    <ng-template ngbPanelContent>
+                          
+                    </ng-template>
+                </ngb-panel>
+
+                </ngb-accordion>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="menu-header" (click)="outside()" >
+        <ul id="main">
+          <li><a href="">OUR CAFES</a>
+            
+          </li>
+          <li><a href="">MENU</a>
+            <div class="menu-list">
+              <table style="width:100%">
+                <tr>
+                  <td></td>
+                  <td>
+                    <h2> COFFEE</h2>
+                    <P>Phim Coffee</P>
+                    <p>phinDi</p>
+                    <p>Espresso Coffee</p>
+                  </td>
+                  <td>
+                    <h2>FREEZE</h2>
+                    <p>Phin Coffee Freeze</p>
+                    <p>Non COffee Frezee</p>
+                  </td>
+                  <td>
+                    <h2> TEA</h2>
+                    <p>Golden Lotus Tea</p>
+                    <p>Peach Jelly Tea</p>
+                    <p>Peach Lemongrass Tea</p>
+                    <p>Lychee Tea</p>
+                  </td>
+                  <td>
+                    <h2> BANH MI</h2>
+                    <p>Grilled Pork</p>
+                    <p>Pork Meatball</p>
+                    <p>Roast Pork & Pork</p>
+                    <p>Sausage</p>
+                    <p>Roast Chicken</p>
+                  </td>
+                  <td>
+                    <h2>OTHERS</h2>
+                    <p>Pastry</p>
+                    <p>Merchandise</p>
+                    <p>Packaged Coffee</p>
+                    <p>Delivery Menu</p>
+                  </td>
+                  <td>
+                    <h2>Phin Sua <br> Da Bold <br> Phin Taste! <br> 29,000VND</h2>
+                    <img src="../../assets/img/hinh1.jpg" width="220px" height="100px" alt="coffee" />
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li><a href="">NEWS</a>
+            <div class="news-list">
+              <table style="width:100%">
+                <tr>
+                  <td></td>
+                  <td><h2>NEWS & EVENTS</h2></td>
+                  <td><h2>PROMOTION</h2></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <h2>Proudly<br> born from <br> the Viet's land, <br> 1999!</h2>
+                    <img src="../../assets/img/hinh2.jpg" width="220px" height="100px" alt="news" />
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">COMMUNITY</a>
+            <div class="community-list">
+              <table style="width:100%">
+                <tr>
+                  <td></td>
+                  <td>
+                    <h2>VIETNAMESE CULTURE</h2>
+                    <p>Modernizing Dong Ho Painting</p>
+                  </td>
+                  <td>
+                    <h2>COMMUNITY</h2>
+                    <p>New Classroom For Children</p>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <h2> Moderning <br> Dong Ho <br> Painting</h2>
+                    <img src="../../assets/img/hinh3.jpg" width="220px" height="100px" alt="news" />
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li><a href="">ABOUT</a>
+            <div class="about-list">
+              <table style="width:100%">
+                <tr>
+                  <td></td>
+                  <td><h2>ORIGIN</h2></td>
+                  <td><h2>CUSTOMER SERVICE</h2></td>
+                  <td><h2>CAREER</h2></td>
+                  <td></td>
+                  <td>
+                    <h2>Vietnamese <br> born and <br> bred!</h2>
+                    <img src="../../assets/img/hinh4.jpg" width="220px" height="100px" alt="news" />
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+  </div>
+  <div class="banner-hinglands" (click)="outside()" >
+    <ngb-carousel [showNavigationArrows]="showNavigationArrows" >
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <a  href="#a1" ><img src="../../assets/img/a1.PNG"></a>
+      </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <a  href="#a2"> <img src="../../assets/img/a2.PNG"></a>
+      </div>  
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <a  href="#a3"><img src="../../assets/img/a3.PNG"></a>
+      </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <a  href="#a4"><img src="../../assets/img/a4.PNG"></a>
+      </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  <div class="imgone-hinglands">
+    <a href="https://www.highlandscoffee.com.vn/en/coffee.html" target="_blank"><img src="../../assets/img/a1.PNG" height="480px" id="a1" alt="hinh1"> </a>
+  </div>
+  <div class="imgtwo-hinglands">
+    <a href="https://www.highlandscoffee.com.vn/vn/phindi-ca-phe-phin-the-he-moi.html" target="_blank"><img src="../../assets/img/a2.PNG" height="480px" id="a2" alt="hinh1"> </a>
+  </div>
+  <div class="imgthree-hinglands">
+    <a href="https://www.highlandscoffee.com.vn/en/phindi-ca-phe-phin-the-he-moi.html" target="_blank"><img src="../../assets/img/a3.PNG" height="480px" id="a3" alt="hinh1"></a>
+  </div>
+  <div class="imgfour-hinglands">
+    <a href="https://www.highlandscoffee.com.vn/vn/tra-di-roi-tinh-tra-sen-vang-highlands-coffee.html" target="_blank"><img src="../../assets/img/a4.PNG" height="480px" id="a4" alt="hinh1"></a>
+  </div>
+  <div class="news" (click)="outside()" >
+    <div class="newcafes-news">
+      <div class="news-left">
+        <h1>NEW CAFES</h1>
+      </div>
+      <div class="news-right">
+        <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <h1>SÂN BAY QUỐC TẾ ĐÀ <br> NẴNG </h1>
+            <P> INTERNATIONAL CHECK IN AREA. <BR>
+              DA NANG AIRPORT, <BR> 
+              62 TRAN QUOC TOAN, HAI CHAU  <BR>
+                DISTRICT DA NANG</P>
+              <br>
+            <P> DIRECTION > </P>
+        </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <h1>SÂN BAY QUỐC TẾ ĐÀ <br> NẴNG </h1>
+            <P> INTERNATIONAL CHECK IN AREA. <BR>
+              DA NANG AIRPORT, <BR> 
+              62 TRAN QUOC TOAN, HAI CHAU  <BR>
+                DISTRICT DA NANG</P>
+              <br>
+            <P> DIRECTION > </P>
+        </div>  
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <h1>SÂN BAY QUỐC TẾ ĐÀ <br> NẴNG </h1>
+            <P> INTERNATIONAL CHECK IN AREA. <BR>
+              DA NANG AIRPORT, <BR> 
+              62 TRAN QUOC TOAN, HAI CHAU  <BR>
+                DISTRICT DA NANG</P>
+              <br>
+            <P> DIRECTION > </P>
+        </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <h1>SÂN BAY QUỐC TẾ ĐÀ <br> NẴNG </h1>
+            <P> INTERNATIONAL CHECK IN AREA. <BR>
+              DA NANG AIRPORT, <BR> 
+              62 TRAN QUOC TOAN, HAI CHAU  <BR>
+                DISTRICT DA NANG</P>
+              <br>
+            <P> DIRECTION > </P>
+        </div>
+        </ng-template>
+      </ngb-carousel>
+
+      </div>
+    </div>
+    <div class="latestnews-news">
+      <table width="100%" >
+        <tr>
+          <td colspan="4"> 
+            <h2> LASTEST NEWS</h2>
+            <a href="#"> view all ></a>
+          </td>
+        </tr>
+        <tr *ngFor="let g of tableshow" class="product-list" id="product-list">
+          <td><img src="../../assets/img/hinh4.jpg" width="110px"  alt="news" /></td>
+          <td colspan="3" class="product">
+                <h6> {{g.name}}</h6>
+                 <P>  <i class="fa-solid fa-calendar"></i> 26/01/2022</P>
+          </td>
+        </tr>
+        <tr>
+          <!-- <td><img src="../../assets/img/hinh3.jpg" width="110px"  alt="news" /></td> -->
+        </tr>
+        <!-- <tr >
+          <td><img src="../../assets/img/hinh4.jpg" width="110px"  alt="news" /></td>
+          <td colspan="3">
+                <h6> {{g.name[1]}}</h6>
+                <P> <i class="fa-solid fa-calendar"></i>21/01/2022</P>
+          </td>
+        </tr>
+        <tr >
+          <td><iMg src="../../assets/img/hinh5.jpg" width="110px"  alt="news" /></td>
+          <td colspan="3">
+              <h6> {{g.name[2]}}</h6>
+              <P> <i class="fa-solid fa-calendar"></i> 23/11/2021</P>
+          </td>
+        </tr> -->
+        <tr>
+          <td colspan="4"> 
+            <!-- <input type="text" class="search" id="search-item" onkeyup="search()" -->
+            <!-- <input type="text" class="search" id="search-item" (keyup)="search($event)"
+            placeholder="Enter your email to receive promotion information..." >  -->
+            <!-- {{pname}} -->
+            <input type="text" class="search" id="search-item" placeholder="send...." [(ngModel)]="pname" (keyup)="insearch()">
+             <button type="submit"><i class="fa-solid fa-paper-plane"></i>SEND</button>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+<div class="footer-highlands" id="indis" (click)="outside()" >
+  <p> <i class="fa-brands fa-facebook-square" ></i> &nbsp; 
+      <i class="fa-brands fa-youtube" ></i> &nbsp; 
+      <i class="fa-brands fa-instagram-square" ></i> &nbsp; &nbsp; &nbsp; 
+      <i class="fa-solid fa-copyright"></i>&nbsp; <span >2018 Highlanbs Coffee. All rights reserved </span> &nbsp;&nbsp;&nbsp;
+      <i class="fa-solid fa-paper-plane"></i>&nbsp; <span > up for our newsletter </span> &nbsp;&nbsp;&nbsp;
+      <i class="fa-solid fa-envelope"></i>&nbsp; <span>customerservice@highlandscoffee.com.vn </span>
+  </p>  
+</div>
+<div class="footer-f" id="dis" (click)="outside()" >
+  <button> <i class="fa-solid fa-location-dot"></i> VIEW MAP </button>
+  <p> <i class="fa-brands fa-facebook-square" ></i> &nbsp; 
+    <i class="fa-brands fa-youtube" ></i> &nbsp; 
+    <i class="fa-brands fa-instagram-square" ></i> &nbsp; &nbsp; &nbsp; </p>
+  <p><i class="fa-solid fa-copyright"></i>&nbsp; <span >2018 Highlanbs Coffee. All rights reserved </span> &nbsp;&nbsp;&nbsp;</p>
+  <p><i class="fa-solid fa-paper-plane"></i>&nbsp; <span > up for our newsletter </span> &nbsp;&nbsp;&nbsp;</p>
+  <p><i class="fa-solid fa-envelope"></i>&nbsp; <span>customerservice@highlandscoffee.com.vn </span></p>
+</div>
+  <div class="f"><button><a href="#top"> <i class="fa-solid fa-angle-up"></i></a></button></div>
+
+</div>
+</div>
+
+  

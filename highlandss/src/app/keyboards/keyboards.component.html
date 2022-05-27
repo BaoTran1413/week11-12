@@ -1,0 +1,54 @@
+<p>virtual-keyboard works!</p>
+<!-- <h1>{{typeText}}</h1> -->
+<div class="virtual-keyboard-container">
+    <table id="table">
+        <tr>
+            <th><button class="button" id="hello" (click)="type($event)">1</button></th>
+            <th><button class="button" (click)="type($event)">2</button></th>
+            <th><button class="button" (click)="type($event)">3</button></th>
+            <th><button class="button" (click)="type($event)">4</button></th>
+            <th><button class="button" (click)="type($event)">5</button></th>
+            <th><button class="button" (click)="type($event)">6</button></th>
+            <th><button class="button" (click)="type($event)">7</button></th>
+            <th><button class="button" (click)="type($event)">8</button></th>
+            <th><button class="button" (click)="type($event)">9</button></th>
+            <th><button class="button" (click)="type($event)">0</button></th>
+            <!-- <th><button class="button lower" [class.upper]="onClick" (mousedown)="mousedown($event)" (mouseup)="mouseup($event)"> <= <i class="fa-solid fa-delete-left"></i></button></th>   -->
+        </tr>
+        <tr>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[0]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[1]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[2]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[3]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[4]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[5]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[6]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[7]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[8]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[9]}}</button></th>
+        </tr>
+        <!-- <tr>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[10]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[11]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[12]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[13]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[14]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[15]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[16]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[17]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[18]}}</button></th>
+        </tr> -->
+        <tr>
+            <!-- <th><button class="button lower" (click)="upperLowerClick($event)" [class.upper]="onUpper"><i class="fa-solid fa-arrow-up"></i></button></th> -->
+            <!-- <th><button class="button" (click)="type($event)">{{keyboardCharacter[19]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[20]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[21]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[22]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[23]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[24]}}</button></th>
+            <th><button class="button" (click)="type($event)">{{keyboardCharacter[25]}}</button></th> -->
+        </tr>
+    </table>
+    
+</div>
+

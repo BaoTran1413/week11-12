@@ -1,0 +1,22 @@
+<table class="border">
+    <tr>
+        <th colspan="3"> 
+            <button (click)="refreshPage()">Refresh</button>
+            <span for="dearch"> Search: &nbsp;&nbsp;</span>
+            <input type="text" id="dearch" [(ngModel)]="search" (keyup)="inpsearch()"> 
+        </th>
+    </tr>
+    <!-- class="page1" [ngClass]="{'page1' : pagethree}" -->
+    <!-- class="page1" [ngClass]="{'page1' : pagefour}" -->
+    <tr>
+        <td> Id </td>
+        <td>Name <button (click)="checkuser()" ><i class="fa-solid fa-arrow-down" *ngIf="!pa"></i>   <i class="fa-solid fa-arrow-up" *ngIf="pa"></i>  </button> 
+        <td>Department <button (click)="checkdependent()"><i class="fa-solid fa-arrow-down" *ngIf="!pas"></i> <i class="fa-solid fa-arrow-up" *ngIf="pas"></i></button> 
+    </tr>
+    <tr *ngFor="let i of tableshow">
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.room}}</td>
+    </tr>
+    
+</table>
